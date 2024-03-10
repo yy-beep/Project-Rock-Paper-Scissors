@@ -1,6 +1,9 @@
 function randomNumber() {
-    
+    const randomNumber = Math.floor(Math.random() * 10 + 1);
+    return randomNumber;
 }
+
+console.log(randomNumber())
 
 // create function called randomNumber()
 // make so random number from 1 to 100 appears

@@ -1,22 +1,20 @@
-function randomNumber() {
-    return Math.floor(Math.random() * 10 + 1);
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-console.log(randomNumber())
+console.log(randomNumber(1, 3))
 
 // create function called randomNumber()
-// make so random number from 1 to 10 appears
+// make so random number from 1 to 3 appears
 
 function getComputerChoice() {
-    let choice = randomNumber()
+    let choice = randomNumber(1, 3)
 
-    if (choice = 1 || 2 || 3) {
+    if (choice == 1) {
         return "Rock"
-    } else if (choice = 4 || 5 || 6) {
+    } else if (choice == 2) {
         return "Paper"
-    } else if (choice = 7 || 8 || 9) {
-        return "Scissors"
-    };
+    } else { return "Scissors"};
 }
 
 console.log(getComputerChoice())
